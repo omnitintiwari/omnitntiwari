@@ -1,0 +1,14 @@
+[build]
+  publish = ".next"
+  command = "bun run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  BUN_VERSION = "1.2.16"
+
+[build.cache]
+  paths = [
+    "node_modules",
+    ".next/cache",
+    "bun.lockb"
+  ]
