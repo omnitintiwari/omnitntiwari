@@ -22,6 +22,7 @@ export const InfiniteMovingCards = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLUListElement>(null);
   const [start, setStart] = useState(false);
+
   const addAnimation = () => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -57,7 +58,7 @@ export const InfiniteMovingCards = ({
 
   const getSpeed = () => {
     if (containerRef.current) {
-      if (speed === "fast") {
+      if (speed === "slow") {
         containerRef.current.style.setProperty("--animation-duration", "20s");
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
@@ -71,6 +72,22 @@ export const InfiniteMovingCards = ({
     addAnimation();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // 👇 function to return different profile images based on index
+  const getProfileImage = (idx: number) => {
+    switch (idx) {
+      case 0:
+        return "/profiles/shubh.svg";
+      case 1:
+        return "/profiles/utkarsh.svg";
+      case 2:
+        return "/profiles/himanshu.svg";
+      case 3:
+        return "/profiles/abhishek.svg";
+      default:
+        return "/profile.svg"; // fallback
+    }
+  };
 
   return (
     <div
@@ -103,7 +120,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               />
-              <span className=" relative z-20 text-sm font-normal leading-[1.6] text-white md:text-lg">
+              <span className="relative z-20 text-sm font-normal leading-[1.6] text-white md:text-lg">
                 {item.quote}
               </span>
 
@@ -112,8 +129,8 @@ export const InfiniteMovingCards = ({
                   <Image
                     height={50}
                     width={50}
-                    src="/profile.svg"
-                    alt="profile"
+                    src={getProfileImage(idx)}
+                    alt={item.name}
                   />
                 </div>
 
@@ -122,7 +139,7 @@ export const InfiniteMovingCards = ({
                     {item.name}
                   </span>
 
-                  <span className=" text-sm font-normal leading-[1.6] text-white-200">
+                  <span className="text-sm font-normal leading-[1.6] text-white-200">
                     {item.title}
                   </span>
                 </div>
@@ -134,3 +151,5 @@ export const InfiniteMovingCards = ({
     </div>
   );
 };
+
+

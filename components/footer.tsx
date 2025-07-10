@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to turn your <span className="text-purple">your</span>  idea into a venture or brand that stands out?
+          Ready to turn <span className="text-purple">your</span>  idea into a venture or brand that stands out?
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">

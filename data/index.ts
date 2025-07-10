@@ -255,30 +255,25 @@ export const gridItems = [
 ] as const;
 
 export const testimonials = [
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+   {
+    quote: `I’ve had the pleasure of teaching Om, a sharp, inquisitive mind with a natural flair for tech entrepreneurship. His confidence and problem-solving abilities consistently stood out in class discussions and projects. I’m confident he’ll drive impactful innovation wherever he go.`,
+    name: "Shubhranil Kundu",
+    title: "Cofounder, Intella Education | Director L&D OKiMi Studios",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `Om is a delightful mix of wit, mischief and sharp thinking. He may have preferred the back bench, but his ideas always led from the front. A natural leader in disguise, he brings both spark and substance to the table.`,
+    name: "Utkarsh Rawat",
+    title: "Founder - The Product Lens | Product & Design Lead - howtocrackinterviews.com ",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `A highly dedicated and hardworking individual, Om Nitin consistently demonstrates a strong eagerness to learn and grow. His commitment to excellence makes him a standout performer.`,
+    name: "Himanshu Kumawat",
+    title: "Security Compliance Manager | CISA | Ex KPMG India I Ex PwC India",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `Om comes in with a great sense of creativity, adventure and wonder - Exactly what is required from young and aspiring founders and entrepreneurs. He has great business acumen and a great sense to identify various business opportunities. As his mentor and business faculty at the Insitute of Venture building, I believe he will build and run very realistic and meaningful businesses in future.`,
+    name: "Abhishek Srivastava",
+    title: "CEO and Co-Founder, The CareerTrek Company | Founder LeagueUNO | Ex-Apple, Accenture, Schneider Electric ",
   },
 ] as const;
 
